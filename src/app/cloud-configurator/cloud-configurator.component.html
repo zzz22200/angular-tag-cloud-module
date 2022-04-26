@@ -62,7 +62,7 @@
       </form>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="getNewExampleData()">
+      <button mat-raised-button color="primary" (click)="getData()">
         Get example Data
       </button>
 
@@ -320,10 +320,8 @@
         [data]="data"
         [config]="cloudConfigForm.value"
         [log]="'warn'"
-        (clicked)="log('clicked', $event)"
+        (clicked)="clickItem($event)"
         (dataChanges)="log('dataChanges', $event)"
-        (afterInit)="log('After Init', $event)"
-        (afterChecked)="log('After Checked', $event)"
         [class.custom-css]="cloudConfigForm.get('customStyle')?.value"
       >
       </angular-tag-cloud>
