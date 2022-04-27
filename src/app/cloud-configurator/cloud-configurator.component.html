@@ -1,300 +1,300 @@
-<div
-  fxLayout="row"
-  fxLayout.xs="column"
-  fxLayout.sm="column"
-  fxLayoutGap="15px"
->
-  <mat-card fxFlex>
-    <mat-card-header>
-      <div mat-card-avatar class="card-image image-data"></div>
-      <mat-card-title>Cloud Data</mat-card-title>
-      <mat-card-subtitle>
-        <a
-          href="https://github.com/d-koppenhagen/angular-tag-cloud-module/blob/master/projects/angular-tag-cloud-module/src/lib/tag-cloud.interfaces.ts"
-          target="_blank"
-        >
-          See CloudData-Interface
-        </a>
-      </mat-card-subtitle>
-    </mat-card-header>
+<!--<div-->
+<!--  fxLayout="row"-->
+<!--  fxLayout.xs="column"-->
+<!--  fxLayout.sm="column"-->
+<!--  fxLayoutGap="15px"-->
+<!--&gt;-->
+<!--  <mat-card fxFlex>-->
+<!--    <mat-card-header>-->
+<!--      <div mat-card-avatar class="card-image image-data"></div>-->
+<!--      <mat-card-title>Cloud Data</mat-card-title>-->
+<!--      <mat-card-subtitle>-->
+<!--        <a-->
+<!--          href="https://github.com/d-koppenhagen/angular-tag-cloud-module/blob/master/projects/angular-tag-cloud-module/src/lib/tag-cloud.interfaces.ts"-->
+<!--          target="_blank"-->
+<!--        >-->
+<!--          See CloudData-Interface-->
+<!--        </a>-->
+<!--      </mat-card-subtitle>-->
+<!--    </mat-card-header>-->
 
-    <mat-card-content>
-      <form [formGroup]="cloudDataForm" fxLayout="column">
-        <h2>Example Data Options</h2>
-        <div
-          class="input-row"
-          fxLayout="row"
-          fxLayoutGap="20px"
-          fxLayout.xs="column"
-        >
-          <mat-form-field fxFlex>
-            <input
-              matInput
-              type="number"
-              formControlName="amount"
-              placeholder="Quantity of random data"
-              min="1"
-              max="100"
-              step="1"
-            />
-          </mat-form-field>
+<!--    <mat-card-content>-->
+<!--      <form [formGroup]="cloudDataForm" fxLayout="column">-->
+<!--        <h2>Example Data Options</h2>-->
+<!--        <div-->
+<!--          class="input-row"-->
+<!--          fxLayout="row"-->
+<!--          fxLayoutGap="20px"-->
+<!--          fxLayout.xs="column"-->
+<!--        >-->
+<!--          <mat-form-field fxFlex>-->
+<!--            <input-->
+<!--              matInput-->
+<!--              type="number"-->
+<!--              formControlName="amount"-->
+<!--              placeholder="Quantity of random data"-->
+<!--              min="1"-->
+<!--              max="100"-->
+<!--              step="1"-->
+<!--            />-->
+<!--          </mat-form-field>-->
 
-          <mat-slide-toggle
-            fxFlex
-            class="adjust-top"
-            formControlName="rotate"
-            fxLayout.xs="column"
-          >
-            Rotate some entries randomly
-          </mat-slide-toggle>
-        </div>
+<!--          <mat-slide-toggle-->
+<!--            fxFlex-->
+<!--            class="adjust-top"-->
+<!--            formControlName="rotate"-->
+<!--            fxLayout.xs="column"-->
+<!--          >-->
+<!--            Rotate some entries randomly-->
+<!--          </mat-slide-toggle>-->
+<!--        </div>-->
 
-        <h2>Clouddata</h2>
-        <div class="input-row" fxLayout="row">
-          <textarea
-            fxFlex
-            class="json-input"
-            matInput
-            rows="20"
-            formControlName="data"
-          ></textarea>
-        </div>
-      </form>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="getData()">
-        Get example Data
-      </button>
+<!--        <h2>Clouddata</h2>-->
+<!--        <div class="input-row" fxLayout="row">-->
+<!--          <textarea-->
+<!--            fxFlex-->
+<!--            class="json-input"-->
+<!--            matInput-->
+<!--            rows="20"-->
+<!--            formControlName="data"-->
+<!--          ></textarea>-->
+<!--        </div>-->
+<!--      </form>-->
+<!--    </mat-card-content>-->
+<!--    <mat-card-actions>-->
+<!--      <button mat-raised-button color="primary" (click)="getData()">-->
+<!--        Get example Data-->
+<!--      </button>-->
 
-      <button mat-raised-button color="basic" (click)="renderJsonData()">
-        Render JSON
-      </button>
-    </mat-card-actions>
-  </mat-card>
+<!--      <button mat-raised-button color="basic" (click)="renderJsonData()">-->
+<!--        Render JSON-->
+<!--      </button>-->
+<!--    </mat-card-actions>-->
+<!--  </mat-card>-->
 
-  <mat-card fxFlex>
-    <mat-card-header>
-      <div mat-card-avatar class="card-image image-options"></div>
-      <mat-card-title>Options</mat-card-title>
-      <mat-card-subtitle>
-        <a
-          href="https://github.com/d-koppenhagen/angular-tag-cloud-module/blob/master/projects/angular-tag-cloud-module/src/lib/tag-cloud.interfaces.ts"
-          target="_blank"
-        >
-          See CloudOptions-Interface
-        </a>
-      </mat-card-subtitle>
-    </mat-card-header>
+<!--  <mat-card fxFlex>-->
+<!--    <mat-card-header>-->
+<!--      <div mat-card-avatar class="card-image image-options"></div>-->
+<!--      <mat-card-title>Options</mat-card-title>-->
+<!--      <mat-card-subtitle>-->
+<!--        <a-->
+<!--          href="https://github.com/d-koppenhagen/angular-tag-cloud-module/blob/master/projects/angular-tag-cloud-module/src/lib/tag-cloud.interfaces.ts"-->
+<!--          target="_blank"-->
+<!--        >-->
+<!--          See CloudOptions-Interface-->
+<!--        </a>-->
+<!--      </mat-card-subtitle>-->
+<!--    </mat-card-header>-->
 
-    <mat-card-content>
-      <form [formGroup]="cloudConfigForm" fxLayout="column">
-        <h2>Proportions</h2>
-        <div
-          class="input-row"
-          fxLayout="row"
-          fxLayoutGap="20px"
-          fxLayout.xs="column"
-        >
-          <mat-form-field fxFlex>
-            <input
-              matInput
-              type="number"
-              formControlName="width"
-              placeholder="Width"
-              min="0.1"
-              max="1000"
-              step="0.1"
-            />
-          </mat-form-field>
+<!--    <mat-card-content>-->
+<!--      <form [formGroup]="cloudConfigForm" fxLayout="column">-->
+<!--        <h2>Proportions</h2>-->
+<!--        <div-->
+<!--          class="input-row"-->
+<!--          fxLayout="row"-->
+<!--          fxLayoutGap="20px"-->
+<!--          fxLayout.xs="column"-->
+<!--        >-->
+<!--          <mat-form-field fxFlex>-->
+<!--            <input-->
+<!--              matInput-->
+<!--              type="number"-->
+<!--              formControlName="width"-->
+<!--              placeholder="Width"-->
+<!--              min="0.1"-->
+<!--              max="1000"-->
+<!--              step="0.1"-->
+<!--            />-->
+<!--          </mat-form-field>-->
 
-          <mat-form-field fxFlex fxLayout.xs="column">
-            <input
-              matInput
-              type="number"
-              formControlName="height"
-              placeholder="Height"
-              min="100"
-              max="1000"
-              step="10"
-            />
-          </mat-form-field>
-        </div>
+<!--          <mat-form-field fxFlex fxLayout.xs="column">-->
+<!--            <input-->
+<!--              matInput-->
+<!--              type="number"-->
+<!--              formControlName="height"-->
+<!--              placeholder="Height"-->
+<!--              min="100"-->
+<!--              max="1000"-->
+<!--              step="10"-->
+<!--            />-->
+<!--          </mat-form-field>-->
+<!--        </div>-->
 
-        <div class="input-row" fxLayout="row" fxLayoutGap="20px">
-          <mat-label
-            >Please note that a width > 1 causes an absolute width in pixels
-            (e.g. 20 means 20 pixels). A width <= 1 means a relative width (e.g.
-            0.9 = 90%).</mat-label
-          >
-        </div>
+<!--        <div class="input-row" fxLayout="row" fxLayoutGap="20px">-->
+<!--          <mat-label-->
+<!--            >Please note that a width > 1 causes an absolute width in pixels-->
+<!--            (e.g. 20 means 20 pixels). A width <= 1 means a relative width (e.g.-->
+<!--            0.9 = 90%).</mat-label-->
+<!--          >-->
+<!--        </div>-->
 
-        <h2>General options</h2>
-        <div
-          class="input-row"
-          fxLayout="row"
-          fxLayoutGap="20px"
-          fxLayout.xs="column"
-        >
-          <mat-slide-toggle fxFlex formControlName="overflow"
-            >Overflow</mat-slide-toggle
-          >
-          <mat-slide-toggle fxFlex formControlName="strict"
-            >Strict</mat-slide-toggle
-          >
-        </div>
-        <div
-          class="input-row"
-          fxLayout="row"
-          fxLayoutGap="20px"
-          fxLayout.xs="column"
-        >
-          <mat-slide-toggle fxFlex formControlName="realignOnResize"
-            >Realign on resize</mat-slide-toggle
-          >
-          <mat-slide-toggle fxFlex formControlName="randomizeAngle"
-            >Randomize angle</mat-slide-toggle
-          >
-        </div>
-        <div
-          class="input-row"
-          fxLayout="row"
-          fxLayoutGap="20px"
-          fxLayout.xs="column"
-          style="padding-top: 20px"
-        >
-          <mat-form-field fxFlex>
-            <input
-              matInput
-              type="number"
-              formControlName="delay"
-              placeholder="Delay in ms for each word (e.g. 300)"
-              min="0"
-              step="50"
-            />
-          </mat-form-field>
-        </div>
+<!--        <h2>General options</h2>-->
+<!--        <div-->
+<!--          class="input-row"-->
+<!--          fxLayout="row"-->
+<!--          fxLayoutGap="20px"-->
+<!--          fxLayout.xs="column"-->
+<!--        >-->
+<!--          <mat-slide-toggle fxFlex formControlName="overflow"-->
+<!--            >Overflow</mat-slide-toggle-->
+<!--          >-->
+<!--          <mat-slide-toggle fxFlex formControlName="strict"-->
+<!--            >Strict</mat-slide-toggle-->
+<!--          >-->
+<!--        </div>-->
+<!--        <div-->
+<!--          class="input-row"-->
+<!--          fxLayout="row"-->
+<!--          fxLayoutGap="20px"-->
+<!--          fxLayout.xs="column"-->
+<!--        >-->
+<!--          <mat-slide-toggle fxFlex formControlName="realignOnResize"-->
+<!--            >Realign on resize</mat-slide-toggle-->
+<!--          >-->
+<!--          <mat-slide-toggle fxFlex formControlName="randomizeAngle"-->
+<!--            >Randomize angle</mat-slide-toggle-->
+<!--          >-->
+<!--        </div>-->
+<!--        <div-->
+<!--          class="input-row"-->
+<!--          fxLayout="row"-->
+<!--          fxLayoutGap="20px"-->
+<!--          fxLayout.xs="column"-->
+<!--          style="padding-top: 20px"-->
+<!--        >-->
+<!--          <mat-form-field fxFlex>-->
+<!--            <input-->
+<!--              matInput-->
+<!--              type="number"-->
+<!--              formControlName="delay"-->
+<!--              placeholder="Delay in ms for each word (e.g. 300)"-->
+<!--              min="0"-->
+<!--              step="50"-->
+<!--            />-->
+<!--          </mat-form-field>-->
+<!--        </div>-->
 
-        <h2>Zoom on hover options</h2>
-        <div formGroupName="zoomOnHover">
-          <div
-            class="input-row"
-            fxLayout="row"
-            fxLayout.xs="column"
-            fxLayoutGap="20px"
-          >
-            <div fxFlex="50%" fxFlex.xs="100%">
-              <div fxLayout="row" fxLayoutGap="10px">
-                <mat-form-field fxFlex="80%">
-                  <mat-label>Color</mat-label>
-                  <input
-                    matInput
-                    [colorPicker]="
-                      cloudConfigForm.get('zoomOnHover')?.get('color')?.value
-                    "
-                    (colorPickerChange)="
-                      cloudConfigForm
-                        .get('zoomOnHover')
-                        ?.get('color')
-                        ?.setValue($event)
-                    "
-                    formControlName="color"
-                  />
-                </mat-form-field>
-                <div
-                  fxFlex="20%"
-                  class="color-box"
-                  [style.background]="
-                    cloudConfigForm.get('zoomOnHover')?.get('color')?.value
-                  "
-                ></div>
-              </div>
-            </div>
+<!--        <h2>Zoom on hover options</h2>-->
+<!--        <div formGroupName="zoomOnHover">-->
+<!--          <div-->
+<!--            class="input-row"-->
+<!--            fxLayout="row"-->
+<!--            fxLayout.xs="column"-->
+<!--            fxLayoutGap="20px"-->
+<!--          >-->
+<!--            <div fxFlex="50%" fxFlex.xs="100%">-->
+<!--              <div fxLayout="row" fxLayoutGap="10px">-->
+<!--                <mat-form-field fxFlex="80%">-->
+<!--                  <mat-label>Color</mat-label>-->
+<!--                  <input-->
+<!--                    matInput-->
+<!--                    [colorPicker]="-->
+<!--                      cloudConfigForm.get('zoomOnHover')?.get('color')?.value-->
+<!--                    "-->
+<!--                    (colorPickerChange)="-->
+<!--                      cloudConfigForm-->
+<!--                        .get('zoomOnHover')-->
+<!--                        ?.get('color')-->
+<!--                        ?.setValue($event)-->
+<!--                    "-->
+<!--                    formControlName="color"-->
+<!--                  />-->
+<!--                </mat-form-field>-->
+<!--                <div-->
+<!--                  fxFlex="20%"-->
+<!--                  class="color-box"-->
+<!--                  [style.background]="-->
+<!--                    cloudConfigForm.get('zoomOnHover')?.get('color')?.value-->
+<!--                  "-->
+<!--                ></div>-->
+<!--              </div>-->
+<!--            </div>-->
 
-            <div fxFlex="50%" fxFlex.xs="100%">
-              <mat-label class="label-text">Scale</mat-label>
-              <mat-slider
-                min="1"
-                max="2"
-                step="0.01"
-                formControlName="scale"
-                [thumbLabel]="true"
-              ></mat-slider>
-            </div>
-          </div>
+<!--            <div fxFlex="50%" fxFlex.xs="100%">-->
+<!--              <mat-label class="label-text">Scale</mat-label>-->
+<!--              <mat-slider-->
+<!--                min="1"-->
+<!--                max="2"-->
+<!--                step="0.01"-->
+<!--                formControlName="scale"-->
+<!--                [thumbLabel]="true"-->
+<!--              ></mat-slider>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div
-            class="input-row"
-            fxLayout="row"
-            fxLayout.xs="column"
-            fxLayoutGap="20px"
-          >
-            <div fxFlex="50%" fxFlex.xs="100%">
-              <mat-label class="label-text">Time</mat-label>
-              <mat-slider
-                min="0"
-                max="2"
-                step="0.1"
-                formControlName="transitionTime"
-                [thumbLabel]="true"
-              ></mat-slider>
-            </div>
-            <div fxFlex="50%" fxFlex.xs="100%">
-              <mat-label class="label-text">Delay</mat-label>
-              <mat-slider
-                min="0"
-                max="2"
-                step="0.1"
-                formControlName="delay"
-                [thumbLabel]="true"
-              ></mat-slider>
-            </div>
-          </div>
-        </div>
+<!--          <div-->
+<!--            class="input-row"-->
+<!--            fxLayout="row"-->
+<!--            fxLayout.xs="column"-->
+<!--            fxLayoutGap="20px"-->
+<!--          >-->
+<!--            <div fxFlex="50%" fxFlex.xs="100%">-->
+<!--              <mat-label class="label-text">Time</mat-label>-->
+<!--              <mat-slider-->
+<!--                min="0"-->
+<!--                max="2"-->
+<!--                step="0.1"-->
+<!--                formControlName="transitionTime"-->
+<!--                [thumbLabel]="true"-->
+<!--              ></mat-slider>-->
+<!--            </div>-->
+<!--            <div fxFlex="50%" fxFlex.xs="100%">-->
+<!--              <mat-label class="label-text">Delay</mat-label>-->
+<!--              <mat-slider-->
+<!--                min="0"-->
+<!--                max="2"-->
+<!--                step="0.1"-->
+<!--                formControlName="delay"-->
+<!--                [thumbLabel]="true"-->
+<!--              ></mat-slider>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
 
-        <h2>Style</h2>
-        <div
-          class="input-row"
-          fxLayout="row"
-          fxLayoutGap="20px"
-          fxLayout.xs="column"
-        >
-          <mat-slide-toggle fxFlex formControlName="customStyle"
-            >Use custom Stylesheet</mat-slide-toggle
-          >
-        </div>
-        <div
-          class="input-row"
-          fxLayout="row"
-          fxLayoutGap="20px"
-          fxLayout.xs="column"
-        >
-          <mat-form-field fxFlex>
-            <input matInput formControlName="font" placeholder="Font" />
-          </mat-form-field>
-        </div>
-        <div
-          class="input-row"
-          fxLayout="row"
-          fxLayoutGap="20px"
-          fxLayout.xs="column"
-        >
-          <mat-form-field fxFlex>
-            <input
-              matInput
-              formControlName="background"
-              placeholder="Background"
-            />
-          </mat-form-field>
-        </div>
-      </form>
-    </mat-card-content>
-    <mat-card-actions class="pull-bottom">
-      <button mat-raised-button color="basic" (click)="reDraw()">
-        Redraw from Observable
-      </button>
-    </mat-card-actions>
-  </mat-card>
-</div>
+<!--        <h2>Style</h2>-->
+<!--        <div-->
+<!--          class="input-row"-->
+<!--          fxLayout="row"-->
+<!--          fxLayoutGap="20px"-->
+<!--          fxLayout.xs="column"-->
+<!--        >-->
+<!--          <mat-slide-toggle fxFlex formControlName="customStyle"-->
+<!--            >Use custom Stylesheet</mat-slide-toggle-->
+<!--          >-->
+<!--        </div>-->
+<!--        <div-->
+<!--          class="input-row"-->
+<!--          fxLayout="row"-->
+<!--          fxLayoutGap="20px"-->
+<!--          fxLayout.xs="column"-->
+<!--        >-->
+<!--          <mat-form-field fxFlex>-->
+<!--            <input matInput formControlName="font" placeholder="Font" />-->
+<!--          </mat-form-field>-->
+<!--        </div>-->
+<!--        <div-->
+<!--          class="input-row"-->
+<!--          fxLayout="row"-->
+<!--          fxLayoutGap="20px"-->
+<!--          fxLayout.xs="column"-->
+<!--        >-->
+<!--          <mat-form-field fxFlex>-->
+<!--            <input-->
+<!--              matInput-->
+<!--              formControlName="background"-->
+<!--              placeholder="Background"-->
+<!--            />-->
+<!--          </mat-form-field>-->
+<!--        </div>-->
+<!--      </form>-->
+<!--    </mat-card-content>-->
+<!--    <mat-card-actions class="pull-bottom">-->
+<!--      <button mat-raised-button color="basic" (click)="reDraw()">-->
+<!--        Redraw from Observable-->
+<!--      </button>-->
+<!--    </mat-card-actions>-->
+<!--  </mat-card>-->
+<!--</div>-->
 
 <mat-card class="card-top-space">
   <mat-card-header>
@@ -325,6 +325,69 @@
         [class.custom-css]="cloudConfigForm.get('customStyle')?.value"
       >
       </angular-tag-cloud>
+      <mat-card-content  style='display: flex;justify-content: center'>
+
+        <div class='point-card'>
+          <div class="container">
+            <h4><b>Keith</b></h4>
+            <p>{{pointMap['Keith']}}</p>
+          </div>
+        </div>
+        <div class='point-card'>
+          <div class="container">
+            <h4><b>Mira</b></h4>
+            <p>{{pointMap['Mira']}}</p>
+          </div>
+        </div>
+        <div class='point-card'>
+          <div class="container">
+            <h4><b>Owen</b></h4>
+            <p>{{pointMap['Owen']}}</p>
+          </div>
+        </div>
+        <div class='point-card'>
+          <div class="container">
+            <h4><b>Kallan</b></h4>
+            <p>{{pointMap['Kallan']}}</p>
+          </div>
+        </div>
+
+      </mat-card-content>
     </div>
   </mat-card-content>
+</mat-card>
+<mat-card class="card-top-space">
+  <mat-card-header style='text-align: center'>
+    <mat-card-title>計分板</mat-card-title>
+
+  </mat-card-header>
+
+  <mat-card-content  style='display: flex;justify-content: center'>
+    <div class='point-card'>
+      <div class="container">
+        <h4><b>Keith</b></h4>
+        <p>{{pointMap['Keith']}}</p>
+      </div>
+    </div>
+    <div class='point-card'>
+      <div class="container">
+        <h4><b>Mira</b></h4>
+        <p>{{pointMap['Mira']}}</p>
+      </div>
+    </div>
+    <div class='point-card'>
+      <div class="container">
+        <h4><b>Owen</b></h4>
+        <p>{{pointMap['Owen']}}</p>
+      </div>
+    </div>
+    <div class='point-card'>
+      <div class="container">
+        <h4><b>Kallan</b></h4>
+        <p>{{pointMap['Kallan']}}</p>
+      </div>
+    </div>
+
+  </mat-card-content>
+
 </mat-card>

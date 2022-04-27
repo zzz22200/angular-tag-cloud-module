@@ -109,10 +109,10 @@ span.w1 {
   border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
-  /*visibility: visible;*/
-  /*opacity: 1;*/
-}
+/*.tooltip:hover .tooltiptext {*/
+/*  !*visibility: visible;*!*/
+/*  !*opacity: 1;*!*/
+/*}*/
 .tooltip:active .tooltiptext {
   visibility: visible;
   opacity: 1;
