@@ -6,7 +6,7 @@ angular-tag-cloud {
   /*height: 700px!important;*/
 }
 angular-tag-cloud.custom-css {
-  border: 8px solid black;
+  /*border: 8px solid black;*/
 }
 
 /* no decoration for links */
@@ -23,31 +23,31 @@ angular-tag-cloud.custom-css {
   font-size: 380%;
 }
 ::ng-deep angular-tag-cloud.custom-css span.w9 {
-  font-size: 330%;
+  font-size: 300%;
 }
 ::ng-deep angular-tag-cloud.custom-css span.w8 {
-  font-size: 280%;
-}
-::ng-deep angular-tag-cloud.custom-css span.w7 {
-  font-size: 240%;
-}
-::ng-deep angular-tag-cloud.custom-css span.w6 {
   font-size: 210%;
 }
-::ng-deep angular-tag-cloud.custom-css span.w5 {
+::ng-deep angular-tag-cloud.custom-css span.w7 {
   font-size: 180%;
 }
-::ng-deep angular-tag-cloud.custom-css span.w4 {
+::ng-deep angular-tag-cloud.custom-css span.w6 {
   font-size: 160%;
 }
-::ng-deep angular-tag-cloud.custom-css span.w3 {
+::ng-deep angular-tag-cloud.custom-css span.w5 {
   font-size: 140%;
 }
-::ng-deep angular-tag-cloud.custom-css span.w2 {
+::ng-deep angular-tag-cloud.custom-css span.w4 {
   font-size: 120%;
 }
-::ng-deep angular-tag-cloud.custom-css span.w1 {
+::ng-deep angular-tag-cloud.custom-css span.w3 {
+  font-size: 120%;
+}
+::ng-deep angular-tag-cloud.custom-css span.w2 {
   font-size: 100%;
+}
+::ng-deep angular-tag-cloud.custom-css span.w1 {
+  font-size: 80%;
 }
 
 /* colors */
@@ -106,7 +106,7 @@ angular-tag-cloud.custom-css {
   width: 87%;
   /*height: fit-content;*/
   display: flex;
-  padding: 43px 20px 20px;
+  padding: 43px 10px 10px;
   background: url("../../assets/backgroud.png") no-repeat;
   background-size: contain;
 }
@@ -195,13 +195,17 @@ mat-label.label-text {
   transition: 0.3s;
   position: relative;
   width: 100%;
-  height: 140px;
+  height: 90px;
   margin-right: 8px;
   text-align: center;
-
+  padding: 20px 0px;
 }
 .point-card h4{
+  font-size: 20px;
   margin-top: 0;
+}
+.point-card p{
+  font-size: 30px;
 }
 /* On mouse-over, add a deeper shadow */
 .point-card:hover {
