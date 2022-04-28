@@ -97,7 +97,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "weight": 8,
         "external": true,
         "rotate": -24.178766905204725,
-        "tooltip": "Nobody",
+        "tooltip": "Annie",
         "color": "#000000",
         "position": {
           "left": 442.2240853548395,
@@ -302,7 +302,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "color": "#000000",
         "external": true,
         "rotate": -1.8223899550095457,
-        "tooltip": "Nobody",
+        "tooltip": "嘻嘻",
         "position": {
           "left": 113.039514920687,
           "top": 300.2720417279533
@@ -314,7 +314,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "color": "#000000",
         "external": true,
         "rotate": 24.48729212914305,
-        "tooltip": "Nobody",
+        "tooltip": "Kitty",
         "position": {
           "left": 315.37377423713116,
           "top": 427
@@ -361,7 +361,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "weight": 3,
         "external": true,
         "rotate": -6.877956668959778,
-        "tooltip": "Nobody",
+        "tooltip": "Steven",
         "color": "#000000",
         "position": {
           "left": 576.1095032205625,
@@ -422,7 +422,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "color": "#000000",
         "external": false,
         "rotate": -0.22965202308995458,
-        "tooltip": "Nobody",
+        "tooltip": "Belle",
         "position": {
           "left": 824.0602196740848,
           "top": 198.4577521005795
@@ -458,7 +458,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "color": "#000000",
         "external": true,
         "rotate": 7.466144417463977,
-        "tooltip": "Nobody",
+        "tooltip": "Corey",
         "position": {
           "left": 166.16153079333668,
           "top": 191.7068777948839
@@ -469,7 +469,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "weight": 2,
         "external": false,
         "rotate": -9.655773308108751,
-        "tooltip": "Nobody",
+        "tooltip": "Lance",
         "color": "#000000",
         "position": {
           "left": 465.1802652354716,
@@ -554,7 +554,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "color": "#000000",
         "external": false,
         "rotate": -11.760138204595872,
-        "tooltip": "Nobody",
+        "tooltip": "Christine",
         "position": {
           "left": 359.5447048220263,
           "top": 58.33587252225513
