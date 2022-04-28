@@ -102,8 +102,13 @@ angular-tag-cloud.custom-css {
 
 /* Component style */
 .wrapper {
-  min-height: 500px;
+  min-height: 70vh;
+  width: 87%;
+  /*height: fit-content;*/
   display: flex;
+  padding: 43px 20px 20px;
+  background: url("../../assets/backgroud.png") no-repeat;
+  background-size: contain;
 }
 
 .adjust-top {
@@ -188,11 +193,16 @@ mat-label.label-text {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 50%;
-  margin-right: 20px;
+  position: relative;
+  width: 100%;
+  height: 140px;
+  margin-right: 8px;
   text-align: center;
-}
 
+}
+.point-card h4{
+  margin-top: 0;
+}
 /* On mouse-over, add a deeper shadow */
 .point-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);

@@ -298,13 +298,13 @@
 
 <mat-card class="card-top-space">
   <mat-card-header>
-    <mat-card-title>Preview</mat-card-title>
+    <mat-card-title>我有印象！</mat-card-title>
     <mat-card-subtitle
-      >Open the Dev-Tools to inspect the emitted events</mat-card-subtitle
+      >龎帝眾人對四位壽星的印象</mat-card-subtitle
     >
   </mat-card-header>
 
-  <mat-card-content>
+  <mat-card-content style='display: flex'>
     <!-- Yo can set / override the config -->
     <!--
     [height]="cloudConfigForm.value.height"
@@ -325,35 +325,33 @@
         [class.custom-css]="cloudConfigForm.get('customStyle')?.value"
       >
       </angular-tag-cloud>
-      <mat-card-content  style='display: flex;justify-content: center'>
-
-        <div class='point-card'>
-          <div class="container">
-            <h4><b>Keith</b></h4>
-            <p>{{pointMap['Keith']}}</p>
-          </div>
-        </div>
-        <div class='point-card'>
-          <div class="container">
-            <h4><b>Mira</b></h4>
-            <p>{{pointMap['Mira']}}</p>
-          </div>
-        </div>
-        <div class='point-card'>
-          <div class="container">
-            <h4><b>Owen</b></h4>
-            <p>{{pointMap['Owen']}}</p>
-          </div>
-        </div>
-        <div class='point-card'>
-          <div class="container">
-            <h4><b>Kallan</b></h4>
-            <p>{{pointMap['Kallan']}}</p>
-          </div>
-        </div>
-
-      </mat-card-content>
     </div>
+    <mat-card-content style='width: 13%'>
+      <div class='point-card keith'>
+        <div class="container">
+          <h4><b>Keith</b></h4>
+          <p>{{pointMap['Keith']}}</p>
+        </div>
+      </div>
+      <div class='point-card mira'>
+        <div class="container">
+          <h4><b>Mira</b></h4>
+          <p>{{pointMap['Mira']}}</p>
+        </div>
+      </div>
+      <div class='point-card owen'>
+        <div class="container">
+          <h4><b>Owen</b></h4>
+          <p>{{pointMap['Owen']}}</p>
+        </div>
+      </div>
+      <div class='point-card kallan'>
+        <div class="container">
+          <h4><b>Kallan</b></h4>
+          <p>{{pointMap['Kallan']}}</p>
+        </div>
+      </div>
+    </mat-card-content>
   </mat-card-content>
 </mat-card>
 <mat-card class="card-top-space">
@@ -361,7 +359,6 @@
     <mat-card-title>計分板</mat-card-title>
 
   </mat-card-header>
-
   <mat-card-content  style='display: flex;justify-content: center'>
     <div class='point-card'>
       <div class="container">

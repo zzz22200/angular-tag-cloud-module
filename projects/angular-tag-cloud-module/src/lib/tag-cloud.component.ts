@@ -552,7 +552,8 @@ export class TagCloudComponent
         }
       }
     }
-
+    //get position
+    // word.position={left:left,top:top}
     // Don't render word if part of it would be outside the container
     if (
       !this.options.overflow &&

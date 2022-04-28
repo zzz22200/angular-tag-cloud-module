@@ -24,8 +24,8 @@ export class CloudConfiguratorComponent implements OnInit {
   data: CloudData[] = [];
 
   defaultCloudOptions: CloudOptions = {
-    width: 1150,
-    height: 550,
+    width: 0.9,
+    height: 0.9,
     overflow: false,
     strict: false,
     realignOnResize: true,
@@ -62,7 +62,6 @@ export class CloudConfiguratorComponent implements OnInit {
       ...this.defaultCloudOptions,
       zoomOnHover: this.fb.group(this.defaultCloudOptions.zoomOnHover || {}),
       customStyle: true,
-      background: 'url("../../assets/backgroud.png") no-repeat',
       font: 'italic bold 14px "Indie Flower", cursive',
     });
 
@@ -82,8 +81,8 @@ export class CloudConfiguratorComponent implements OnInit {
   initData() {
     this.data = [
       {
-        'text': '工程師',
-        'weight': 9,
+        'text': '興趣廣泛',
+        'weight': 4,
         'color': '#33bbb5',
         'external': false,
         'rotate': 0,
@@ -92,7 +91,7 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': '人很好',
         'weight': 3,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': false,
         'rotate': 0,
         'tooltip': 'Keith',
@@ -100,7 +99,7 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': 'EQ 很好',
         'weight': 5,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': false,
         'rotate': 0,
         'tooltip': 'Keith',
@@ -108,7 +107,7 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': '健談',
         'weight': 6,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': false,
         'rotate': 0,
         'tooltip': 'Keith',
@@ -116,15 +115,15 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': '懂吃懂喝',
         'weight': 6,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': false,
         'rotate': 0,
         'tooltip': 'Keith',
       },
       {
-        'text': '秀外慧中，蕙質蘭心',
+        'text': '皮卡丘',
         'weight': 2,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': false,
         'rotate': 11,
         'tooltip': 'Mira',
@@ -132,7 +131,7 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': '髮質很好',
         'weight': 5,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': false,
         'rotate': 19,
         'tooltip': 'Mira',
@@ -140,15 +139,15 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': '很有條理',
         'weight': 3,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': false,
         'rotate': -3,
         'tooltip': 'Mira',
       },
       {
         'text': '很溫柔',
-        'weight': 10,
-        'color': '#000000',
+        'weight': 6,
+        'color': '#ffffff',
         'external': false,
         'rotate': 6,
         'tooltip': 'Mira',
@@ -156,7 +155,7 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': '認真',
         'weight': 5,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': false,
         'rotate': 0,
         'tooltip': 'Mira',
@@ -164,7 +163,7 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': '工程部扛壩子',
         'weight': 3,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': true,
         'rotate': 0,
         'tooltip': 'Owen',
@@ -172,7 +171,7 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': '謙謙君子',
         'weight': 6,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': false,
         'rotate': -14,
         'tooltip': 'Owen',
@@ -180,7 +179,7 @@ export class CloudConfiguratorComponent implements OnInit {
       {
         'text': '熱心',
         'weight': 7,
-        'color': '#000000',
+        'color': '#ffffff',
         'external': true,
         'rotate': -14,
         'tooltip': 'Owen',
@@ -194,7 +193,7 @@ export class CloudConfiguratorComponent implements OnInit {
       },
       {
         'text': '人很nice',
-        'weight': 8,
+        'weight': 5,
         'color': '#4b131b',
         'external': false,
         'rotate': 0,
@@ -202,7 +201,7 @@ export class CloudConfiguratorComponent implements OnInit {
       },
       {
         'text': '龎帝顏值擔當',
-        'weight': 4,
+        'weight': 6,
         'external': false,
         'rotate': 0,
         'tooltip': 'Kallan',
@@ -216,7 +215,7 @@ export class CloudConfiguratorComponent implements OnInit {
       },
       {
         'text': '很會忍痛',
-        'weight': 5,
+        'weight': 4,
         'color': '#58b77f',
         'external': false,
         'rotate': 0,
@@ -232,44 +231,44 @@ export class CloudConfiguratorComponent implements OnInit {
       },
       {
         'text': '水',
-        'weight': 3,
+        'weight': 8,
         'color': '#efe244',
         'external': true,
         'rotate': 0,
         'tooltip': 'Kallan',
       },
       {
-        'text': '混肴',
-        'weight': 5,
+        'text': '秀外慧中，蕙質蘭心',
+        'weight': 4,
         'external': true,
-        'rotate': 0,
+        'rotate': 20,
         'tooltip': 'No Body',
       },
       {
-        'text': '混肴',
+        'text': '謙謙君子、溫文儒雅',
         'weight': 5,
         'color': '#17974e',
         'external': true,
-        'rotate': 0,
+        'rotate': -20,
         'tooltip': 'No Body',
       },
       {
-        'text': '混肴',
-        'weight': 2,
+        'text': '運動健將、女中豪傑',
+        'weight': 4,
         'color': '#4877e7',
         'external': false,
         'rotate': 11,
         'tooltip': 'No Body',
       },
       {
-        'text': '混肴',
+        'text': '不按牌理出牌',
         'weight': 5,
         'external': false,
         'rotate': 0,
         'tooltip': 'No Body',
       },
       {
-        'text': '混肴',
+        'text': '說謊不眨眼',
         'weight': 5,
         'color': '#1ebc8b',
         'external': false,
@@ -277,14 +276,14 @@ export class CloudConfiguratorComponent implements OnInit {
         'tooltip': 'No Body',
       },
       {
-        'text': '混肴',
-        'weight': 7,
+        'text': '飯桶',
+        'weight': 2,
         'external': true,
         'rotate': 0,
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
+        'text': '英文名字很長',
         'weight': 2,
         'color': '#a1efed',
         'external': false,
@@ -292,38 +291,38 @@ export class CloudConfiguratorComponent implements OnInit {
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
-        'weight': 7,
+        'text': '喜歡打籃球',
+        'weight': 1,
         'color': '#1e2554',
         'external': true,
         'rotate': 16,
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
+        'text': '有很多技能',
         'weight': 5,
         'external': false,
         'rotate': -18,
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
-        'weight': 5,
+        'text': '喜歡說故事',
+        'weight': 3,
         'color': '#d1de2b',
         'external': false,
         'rotate': 0,
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
-        'weight': 8,
+        'text': '喜歡阿飄',
+        'weight': 6,
         'color': '#f09c9f',
         'external': false,
         'rotate': 0,
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
+        'text': '公司內定人選',
         'weight': 4,
         'color': '#2834b6',
         'external': true,
@@ -331,7 +330,7 @@ export class CloudConfiguratorComponent implements OnInit {
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
+        'text': '可以站著睡覺',
         'weight': 2,
         'color': '#4654fa',
         'external': true,
@@ -339,35 +338,35 @@ export class CloudConfiguratorComponent implements OnInit {
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
-        'weight': 9,
+        'text': '吃飯吃很快',
+        'weight': 2,
         'external': false,
         'rotate': 0,
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
+        'text': '正人君子',
         'weight': 5,
         'external': false,
         'rotate': -15,
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
+        'text': '整形',
         'weight': 3,
         'external': true,
         'rotate': 10,
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
-        'weight': 8,
+        'text': '大胃王',
+        'weight': 3,
         'external': true,
         'rotate': 0,
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
+        'text': '不愛吃青菜',
         'weight': 3,
         'color': '#ea5771',
         'external': false,
@@ -375,7 +374,7 @@ export class CloudConfiguratorComponent implements OnInit {
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
+        'text': '時間管理大師',
         'weight': 5,
         'color': '#ea16b0',
         'external': true,
@@ -383,7 +382,7 @@ export class CloudConfiguratorComponent implements OnInit {
         'tooltip': 'Nobody',
       },
       {
-        'text': '混肴',
+        'text': '孩子的媽',
         'weight': 4,
         'color': '#eacdc',
         'external': true,
@@ -393,6 +392,7 @@ export class CloudConfiguratorComponent implements OnInit {
     ];
     this.data.map(res => {
       res.color = '#000000';
+      res.rotate=(Math.random() < 0.5 ? -1 : 1)*( Math.random()*25)
       return res;
     });
   }
@@ -454,7 +454,7 @@ export class CloudConfiguratorComponent implements OnInit {
     // console.log(this.colorMap[selectWord.tooltip])
     // @ts-ignore
     if (!this.colorMap[selectWord.tooltip]) {
-      this.data.filter(res => res.text === word)[0].color = '#A9A9A9';
+      this.data.filter(res => res.text === word)[0].color = '#D3D3D3';
     } else {
       // @ts-ignore
       this.data.filter(res => res.text === word)[0].color = this.colorMap[selectWord.tooltip];
