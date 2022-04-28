@@ -88,8 +88,8 @@ export class CloudConfiguratorComponent implements OnInit {
         "tooltip": "Owen",
         "color": "#000000",
         "position": {
-          "left": 418.475,
-          "top": 205
+          "left": 308.475,
+          "top": 214
         }
       },
       {
@@ -268,7 +268,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "rotate": -1.065050389128086,
         "tooltip": "Mira",
         "position": {
-          "left": 294.67065652726825,
+          "left": 282.6706,
           "top": 337.8107582355337
         }
       },
@@ -317,7 +317,7 @@ export class CloudConfiguratorComponent implements OnInit {
         "tooltip": "Nobody",
         "position": {
           "left": 315.37377423713116,
-          "top": 398.1466964211096
+          "top": 427
         }
       },
       {
@@ -381,12 +381,12 @@ export class CloudConfiguratorComponent implements OnInit {
         }
       },
       {
-        "text": "不愛吃青菜",
+        "text": "藍色衣服",
         "weight": 3,
         "color": "#000000",
         "external": false,
         "rotate": -3.2635994239312627,
-        "tooltip": "Nobody",
+        "tooltip": "Owen",
         "position": {
           "left": 164.5714834865745,
           "top": 340.1808377470518
